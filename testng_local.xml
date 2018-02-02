@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MercuryFlight_testng" parallel="tests" thread-count="3">
+ <test name="Book a Flight test firefox">
+      <parameter name="browser"	value="firefox"></parameter>
+      <classes>
+        <class name="Test.BookFlight_Local" ></class>  
+    </classes>
+</test>
+ <test name="Book a Flight test chrome">
+      <parameter name="browser"	value="chrome"></parameter>
+      <classes>
+        <class name="Test.BookFlight_Local" ></class>  
+    </classes>
+</test>
+ <test name="Book a Flight test iexplore">
+      <parameter name="browser"	value="iexplore"></parameter>
+      <classes>
+        <class name="Test.BookFlight_Local" ></class>  
+    </classes>
+</test>
+</suite>
