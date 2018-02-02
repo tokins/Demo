@@ -29,9 +29,7 @@ public class testSample {
 		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
 		driver.get("http://newtours.demoaut.com/index.php");
 		driver.manage().timeouts().implicitlyWait(20L,TimeUnit.SECONDS);	
-		
 		driver.quit();
-		
 		
 	}
 	

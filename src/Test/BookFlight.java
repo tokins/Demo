@@ -53,13 +53,9 @@ public class BookFlight {
 
 		DesiredCapabilities cap = null;
 		if (browser.equals("firefox")) {
-			
-			
-			
-			
+				
 			//FirefoxOptions options = new FirefoxOptions();
-			
-	 
+				 
 			//cap = DesiredCapabilities.firefox();
 			//cap.setCapability("moz:firefoxOptions", options);
 			//options.setBinary("\"C:\\Program Files\\Mozilla Firefox\\firefox.exe"); //Location where Firefox is installed
@@ -85,13 +81,6 @@ public class BookFlight {
 			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
 		}
 		
-		 
-		
-			
-		
-		
-		
-		
 		/*System.setProperty("webdriver.chrome.driver", Constant.Path_Chromedriver);
 		Log.info("New driver instantiated");
 		
@@ -110,7 +99,6 @@ public class BookFlight {
 		ExcelUtil.setExcelFile(Constant.Path_TestData, "Sheet1");
 		Log.info("Open the Excel Datatable");
 
-			
 	}
 	
 	@Test(priority = 1)
@@ -134,7 +122,6 @@ public class BookFlight {
 	@Test(priority = 2)
 	public void SignIn() {
 		
-	
 		create_account_success.link_SignIn().click();
 		Log.info("Click Sign In link");
 		mercurysignon.textBox_UserName().sendKeys(User);
@@ -144,7 +131,7 @@ public class BookFlight {
 		mercurysignon.button_Submit().click();	
 		Log.info("Click Submit button");
 		
-		Reporter.log("SignIn Successful | ");
+		Reporter.log("SignIn is successful| ");
 		
 	}	
 		

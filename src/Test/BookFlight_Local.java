@@ -75,7 +75,6 @@ public class BookFlight_Local {
 		ExcelUtil.setExcelFile(Constant.Path_TestData, "Sheet1");
 		Log.info("Open the Excel Datatable");
 
-			
 	}
 	
 	@Test (priority=0)
@@ -195,9 +194,6 @@ public class BookFlight_Local {
 		Constant.driver.quit();	
 		Log.info("Close the browser");
 	}
-	
-	
-	
 
 }
 
